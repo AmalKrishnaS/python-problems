@@ -1,13 +1,14 @@
-#sum of first N positive numbers
+#Average of N numbers
 
-number = int(input('Enter a number: '))
+number = int(input('Enter the total number of elements: '))
 
-def find_sum(number):
+def find_avg(number):
   sum = 0
-  for i in range(number+1):
-    sum += i
-  return sum
+  for i in range(number):
+    sum += int(input('Enter the number: '))
+  average = sum / number
+  return average
 
-sum = find_sum(number)
+average = find_avg(number)
 
-print(sum)
+print(average)
